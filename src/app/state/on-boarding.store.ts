@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Store, StoreConfig } from '@datorama/akita';
 
 export interface OnBoardingState {
+  form: {
+    name: string
+  },
   stepOne: {
     form: {
       name: string;

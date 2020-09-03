@@ -3,8 +3,8 @@ import { StepThreeComponent } from './step-three/step-three.component';
 import { OnBoardingComponent } from './on-boarding/on-boarding.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { StepOneComponent } from './step-one/step-one.component';
 import { HomeComponent } from './home/home.component';
+import {FormComponent} from './form/form.component'
 
 const routes: Routes = [
   {
@@ -14,21 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'onboarding',
-    component: OnBoardingComponent,
-    children: [
-      {
-        path: '',
-        component: StepOneComponent
-      },
-      {
-        path: 'step-two',
-        component: StepTwoComponent
-      },
-      {
-        path: 'step-three',
-        component: StepThreeComponent
-      }
-    ]
+    component: FormComponent,
   }
 ];
 

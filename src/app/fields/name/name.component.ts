@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { AkitaNgFormsManager } from '@datorama/akita-ng-forms-manager';
 
 @Component({
-  selector: 'app-step-one',
-  templateUrl: './step-one.component.html'
+  selector: 'app-name',
+  templateUrl: './name.component.html'
 })
-export class StepOneComponent implements OnInit {
+export class NameComponent implements OnInit {
   form: FormGroup;
 
   constructor(
@@ -20,6 +20,6 @@ export class StepOneComponent implements OnInit {
       email: ['', Validators.required]
     });
 
-    this.formsManager.upsert('stepOne', this.form);
+    this.formsManager.upsert('form.name', this.form);
   }
 }

@@ -34,7 +34,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { StepOneComponent } from './step-one/step-one.component';
 import { OnBoardingComponent } from './on-boarding/on-boarding.component';
 import { StepTwoComponent } from './step-two/step-two.component';
 import { StepThreeComponent } from './step-three/step-three.component';
@@ -42,16 +41,19 @@ import { HomeComponent } from './home/home.component';
 import { ValidStepDirective } from './valid-step.directive';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormComponent } from './form/form.component';
+import {NameComponent} from './fields/name/name.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    StepOneComponent,
     OnBoardingComponent,
     StepTwoComponent,
     StepThreeComponent,
     HomeComponent,
-    ValidStepDirective
+    ValidStepDirective,
+    FormComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,
